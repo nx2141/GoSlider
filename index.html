@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GoSlider</title>
+  </head>
+  <body>
+    <div class="goslider_wrapper">
+      <div class="goslider">
+        <ul>
+          <li>
+            <a href="https://goweb.jp/contact/"
+              ><img
+                src="https://goweb.jp/img/top/online_btn.png"
+                width="270"
+                height="101"
+                alt="補助金相談"
+            /></a>
+          </li>
+          <li>
+            <a href="https://goweb.jp/hp/advertisement.php"
+              ><img
+                src="https://goweb.jp/img/top/ad_btn.png"
+                width="270"
+                height="101"
+                alt="WEB広告得意です"
+            /></a>
+          </li>
+          <li>
+            <a href="https://goweb.jp/hp/hojokin.php"
+              ><img
+                src="https://goweb.jp/img/top/hojokin_btn.png"
+                width="270"
+                height="101"
+                alt="補助金活用のススメ"
+            /></a>
+          </li>
+        </ul>
+        <button id="goslider_left_go" onclick="leftGo()">←</button>
+        <button id="goslider_right_go" onclick="rightGo()">→</button>
+      </div>
+    </div>
+    <script src="./goslider.js"></script>
+    <link rel="stylesheet" href="/common/css/goslider.css" />
+    <style type="text/css">
+      circle_arrow2 abbr,
+      address,
+      article,
+      aside,
+      audio,
+      b,
+      blockquote,
+      body,
+      canvas,
+      caption,
+      circle_arrow2 html,
+      cite,
+      code,
+      dd,
+      del,
+      details,
+      dfn,
+      div,
+      dl,
+      dt,
+      em,
+      fieldset,
+      figcaption,
+      figure,
+      footer,
+      form,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      header,
+      hgroup,
+      i,
+      iframe,
+      img,
+      ins,
+      kbd,
+      label,
+      legend,
+      li,
+      mark,
+      menu,
+      nav,
+      object,
+      ol,
+      p,
+      pre,
+      q,
+      samp,
+      section,
+      small,
+      span,
+      strong,
+      sub,
+      summary,
+      sup,
+      table,
+      tbody,
+      td,
+      tfoot,
+      th,
+      thead,
+      time,
+      tr,
+      ul,
+      var,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+      }
+      body {
+        color: #333;
+        font-size: 90%;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+          "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        overflow-x: hidden;
+        background-size: cover;
+        -webkit-text-size-adjust: 100%;
+      }
+      @media only screen and (min-width: 1200px) {
+        body {
+          background: url(../../img/common/go_bg.jpg) center fixed;
+        }
+      }
+      .clearfix:after,
+      .clearfix:before {
+        content: "";
+        display: table;
+      }
+      .clearfix:after {
+        clear: both;
+      }
+      .clearfix {
+        zoom: 1;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:after,
+      blockquote:before,
+      q:after,
+      q:before {
+        content: "";
+        content: none;
+      }
+      a {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        background: #ccc;
+        margin: 35px 0 0;
+      }
+      input,
+      select {
+        vertical-align: middle;
+      }
+      .bold {
+        font-weight: 700;
+      }
+      .ancher {
+        display: block;
+        padding-top: 70px !important;
+        margin-top: -70px !important;
+      }
+      body {
+        text-align: left;
+        background-color: #fff;
+        padding-top: 110px;
+      }
+      .goslider_wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    </style>
+  </body>
+</html>
